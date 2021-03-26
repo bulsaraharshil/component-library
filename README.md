@@ -1,2 +1,3 @@
-# component-library
- Component library consisting of all the basic components like alert, button, cards, etc.
+# Bulsara UI
+
+## This is my personal component library which contains all the basic components like alert, button, cards, etc...
