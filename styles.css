@@ -159,8 +159,7 @@ nav>ul>li {
 }
 
 .button-secondary {
-  background-color: inherit;
-  color: white;
+  background-color: whitesmoke;
   border-radius: 0.5rem;
   border: 1px solid inherit;
 }
