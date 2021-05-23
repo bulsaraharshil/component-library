@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
 
+:root{
+  --blue: #2563EB;
+  --bgCol: #111827;
+  --white: white;
+  --black: black;
+  --grey: #f0f0f0;
+  --inputColor: #c92432;
+  --whitesmoke: whitesmoke;
+  --dodgerBlue: dodgerblue;
+}
+
 body {
   font-family: 'Padauk', sans-serif;
   margin: 0rem;
-  background-color: #111827;
-  color: white;
+  background-color: var(--bgCol);
+  color: var(--white);
 }
 
 a{
-  color: white;
+  color: var(--white);
 }
 
 .first {
@@ -72,7 +83,7 @@ nav>ul>li {
 }
 .alert-secondary{
   border: 1px solid rgba(0, 0, 0, 0.474);
-  background-color: whitesmoke;
+  background-color: var(--whitesmoke);
   color: #919aa1
 }
 .alert-info{
@@ -105,7 +116,7 @@ nav>ul>li {
 }
 
 .closebtn:hover {
-  color: black;
+  color: var(--black);
 }
 
 .badge-box {
@@ -116,7 +127,7 @@ nav>ul>li {
   width: 4.375rem;
   height: 4.375rem;
   margin-left: 0.625rem;
-  background: #fff;
+  background: var(--white);
   border-radius: 2.5rem;
   box-sizing: border-box;
   text-align: center;
@@ -138,40 +149,38 @@ nav>ul>li {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
-  background: black;
-  color: whitesmoke;
+  background: var(--black);
+  color: var(--whitesmoke);
 }
 
 .button {
   text-decoration: none;
   padding: 0.5rem 1rem;
-
 }
 
 .button-primary {
-  background-color: #2563EB;
+  background-color: var(--blue);
   border-radius: 0.5rem;
-  color: white;
+  color: var(--white);
   text-align: center;
 }
 
 .button-secondary {
-  background-color: whitesmoke;
+  background-color: var(--whitesmoke);
   border-radius: 0.5rem;
   border: 1px solid inherit;
 }
 
 
-
 .fab {
   width: 4.375rem;
   height: 4.375rem;
-  background-color: #2563EB;
+  background-color: var(--blue);
   border-radius: 50%;
   box-shadow: 0 6px 0.625rem 0 rgba(118, 113, 113, 0.474);
   font-size: 3.125rem;
   line-height: 4.375rem;
-  color: white;
+  color: var(--white);
   text-align: center;
   position: fixed;
   right: 3.125rem;
@@ -190,7 +199,7 @@ nav>ul>li {
   background-color: #f44336;
   max-width: fit-content;
   border-radius: 0.5rem;
-  color: white;
+  color: var(--white);
   margin: 1rem 0rem;
   text-align: center;
 }
@@ -201,11 +210,11 @@ nav>ul>li {
 }
 
 .btn-icon {
-  background-color: DodgerBlue;
+  background-color: var(--dodgerBlue);
   border-radius: 0.5rem;
   max-width: fit-content;
   border: none;
-  color: white;
+  color: var(--white);
   font: inherit;
   margin-top: 1rem;
   padding: 0.75rem 1rem;
@@ -228,7 +237,7 @@ nav>ul>li {
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
   margin: 3.125rem auto;
-  background: #2563EB;
+  background: var(--blue);
   box-shadow: 0 4px 0.5rem 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 0.5rem;
@@ -242,7 +251,7 @@ nav>ul>li {
   font-size: 1rem;
   font-weight: 700;
   background: #F25287;
-  color: whitesmoke;
+  color: var(--whitesmoke);
   padding: 3px 0.625rem;
 }
 
@@ -253,13 +262,13 @@ nav>ul>li {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
-  background-color: #f0f0f0;
+  background-color: var(--grey);
   border-radius: 2px;
   text-transform: uppercase;
   background: #152348;
   border: none;
   
-  color: whitesmoke;
+  color: var(--whitesmoke);
   padding: 3px 0.625rem;
   transition: all 0.3s ease-out;
   cursor: pointer;
@@ -270,7 +279,7 @@ nav>ul>li {
   top: 16rem;
   left: 3.125rem;
   background-color: #5CB85C;
-  color: black;
+  color: var(--black);
   padding: 0.5rem;
 }
 
@@ -280,7 +289,7 @@ nav>ul>li {
   justify-content: center;
   height: 12.5rem;
   padding: 3.125rem;
-  background: #f0f0f0;
+  background: var(--grey);
   box-shadow: 0 4px 0.5rem 0 rgba(0, 0, 0, 0.2),
     0 6px 1.25rem 0 rgba(253, 251, 251, 0.19);
   transition: 0.3s;
@@ -304,7 +313,7 @@ nav>ul>li {
   display: block;
   margin-bottom: 1.2rem;
   text-transform: uppercase;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -317,7 +326,7 @@ nav>ul>li {
   font-size: 1rem;
   line-height: 1.3rem;
   margin-bottom: 1.2rem;
-  color: whitesmoke;
+  color: var(--whitesmoke);
 }
 
 .img-responsive {
@@ -352,28 +361,26 @@ nav>ul>li {
 
 .input-tag:focus,
 .input-validate:focus {
-  border-color: dodgerblue;
-  box-shadow: 0 0 0.5rem 0 dodgerblue;
+  border-color: var(--dodgerBlue);
+  box-shadow: 0 0 0.5rem 0 var(--dodgerBlue);
 }
 
 
 .input-container {
   margin-bottom: 1rem;
   max-width: 18.75rem;
-
-
 }
 
 .input-container[data-error] .input-validate {
-  border-color: #c92432;
-  color: #c92432;
+  border-color: var(--inputColor);
+  color: var(--inputColor);
   background-color: #fffafa;
 }
 
 .input-container[data-error]::after {
   content: attr(data-error);
   font-size: 0.85em;
-  color: #c92432;
+  color: var(--inputColor);
   display: block;
   margin: 0.625rem 0;
 
@@ -386,8 +393,6 @@ nav>ul>li {
   border: 1px solid #dddddd;
   border-radius: 4px;
   transition: background 0.2s, border 0.2s;
-  
-
 }
 
 .list-tag {
@@ -421,7 +426,7 @@ nav>ul>li {
   flex-direction: column;
   justify-content: center;
   margin-top: 1.5rem;
-  background-color: #2563EB;
+  background-color: var(--blue);
   border-radius: 0.625rem;
 }
 
@@ -429,11 +434,11 @@ nav>ul>li {
   font-size: 1rem;
   padding: 0.5em;
 
-  color: white;
+  color: var(--white);
 }
 
 .notification-box h2 span {
-  color: white;
+  color: var(--white);
 }
 
 .notification-item {
@@ -443,17 +448,17 @@ nav>ul>li {
   margin-bottom: 1rem;
   cursor: pointer;
   padding: 1rem;
-  background-color: lightgray;
+  background-color: var(--grey);
 }
 
 .notification-item .text h4 {
-  color: black;
+  color: var(--black);
   font-size: 1rem;
   margin-top: 0.625rem;
 }
 
 .notification-item .text p {
-  color: black;
+  color: var(--black);
   font-size: 0.75rem;
 }
 
@@ -462,7 +467,7 @@ nav>ul>li {
 
 
 .desktop-nav {
-  background: #2563EB;
+  background: var(--blue);
   border: 1px solid white;
   border-radius: 0.5rem;
   display: flex;
@@ -494,7 +499,7 @@ nav>ul>li {
 .desktop-nav ul li a {
   padding: 0.4rem;
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--whitesmoke);
   font-size: 1.2rem;
 
 }
@@ -510,17 +515,17 @@ nav>ul>li {
   position: relative;
   padding: 1rem;
   border-radius: 0.5rem;
-  background: #2563EB;
-  color: whitesmoke;
+  background: var(--blue);
+  color: var(--whitesmoke);
 }
 
 .close {
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: var(--white);
   line-height: 1.5rem;
   position: absolute;
   right: 0px;
-  background-color: #111827;
+  background-color: var(--bgCol);
   text-align: center;
   top: 0px;
   width: 2.125rem;
@@ -545,7 +550,7 @@ nav>ul>li {
 .rating-star span {
   cursor: pointer;
   font-size: 2.5rem;
-  padding: 0 2.625rem;
+  padding: 0rem 1rem;
   transition: all 150ms;
   /* display: inline-block; */
 }
@@ -567,8 +572,8 @@ nav>ul>li {
 }
 
 .items {
-  background: #2563EB;
-  border: 1px solid whitesmoke;
+  background: var(--blue);
+  border: 1px solid var(--whitesmoke);
   border-radius: 0.5rem;
   text-align: center;
   margin-top: 1rem;
@@ -590,14 +595,14 @@ nav>ul>li {
 
 
 .heading-text {
-  color: white;
+  color: var(--white);
   font-size: 2rem;
   display: block;
   text-align: start;
 }
 
 .small-text {
-  color: #2563EB;
+  color: var(--blue);
   font-size: 1.5rem;
   display: block;
   text-align: start;
@@ -613,16 +618,16 @@ nav>ul>li {
 .center-text {
   font-size: 2rem;
   text-align: center;
-  color: white;
+  color: var(--white);
   display: block;
 }
 
 .toast-btn {
-  background-color: #2563EB;
+  background-color: var(--blue);
   border-radius: 0.5rem;
   max-width: fit-content;
   border: none;
-  color: white;
+  color: var(--white);
   font: inherit;
   margin-top: 1rem;
   padding: 0.75rem 1rem;
@@ -635,7 +640,7 @@ nav>ul>li {
   min-width: 23.125rem;
   margin-left: -7.8rem;
   background-color: rebeccapurple;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   border-radius: 2px;
   padding: 1rem;
